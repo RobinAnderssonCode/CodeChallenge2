@@ -12,15 +12,15 @@ public class Encrypt {
 			if (Character.isLetter(letter)) {
 				if (Character.isUpperCase(letter)) {
 					if (letter > 'Z') {
-						letter = (char) (letter - 26);
+						letter = (char) (letter - 25);
 					} else if (letter < 'A') {
-						letter = (char) (letter + 26);
+						letter = (char) (letter + 25);
 					}
 				} else {
 					if (letter > 'z') {
-						letter = (char) (letter - 26);
+						letter = (char) (letter - 25);
 					} else if (letter < 'a') {
-						letter = (char) (letter + 26);
+						letter = (char) (letter + 25);
 					}
 
 				}
