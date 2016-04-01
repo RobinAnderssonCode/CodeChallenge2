@@ -6,9 +6,13 @@ public class Encrypt {
 
 		for (int i = 0; i < ch.length; i++) {
 
+			if (shift < 0){
+				shift += 26;
+			}
+			
 			char letter = ch[i];
 			letter = (char) (letter + shift);
-
+			
 			if (Character.isLetter(letter)) {
 				if (Character.isUpperCase(letter)) {
 					if (letter > 'Z') {
