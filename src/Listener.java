@@ -14,7 +14,7 @@ public class Listener implements ActionListener {
 		String input;
 		input = Gui.textArea1.getText();
 
-		Encrypt.encrypt(input, shift);
+		Encrypt.input(input, shift);
 
 	}
 
